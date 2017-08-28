@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Checkers</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="ch-header">
+		<h1 class="ch-header__h1">Checkers</h1>
+	</header>
+	<main class="ch_main">
+		<table border="2" class="ch-board">
+			<tr class="ch-board__row-top">
+				<td class="ch-board__cell-top" colspan="10">0</td>
+			</tr>
+			<tr class="ch-board__row-8">
+				<td class="numeric-numeration">8</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-1"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-2"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-3"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-4"></div>
+				</td>
+				<td rowspan="10" class="right-col">0</td>
+			</tr>
+			<tr class="ch-board__row-7">
+				<td class="numeric-numeration">7</td>
+				<td class="black-cell">
+					<div class="red-checker-5"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-6"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-7"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-8"></div>
+				</td>
+				<td class="white-cell"></td>
+			</tr>
+			<tr class="ch-board__row-6">
+				<td class="numeric-numeration">6</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-9"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-10"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-11"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="red-checker-12"></div>
+				</td>
+			</tr>
+			<tr class="ch-board__row-5">
+				<td class="numeric-numeration">5</td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+			</tr>
+			<tr class="ch-board__row-4">
+				<td class="numeric-numeration">4</td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+				<td class="white-cell"></td>
+				<td class="black-cell"></td>
+			</tr>
+			<tr class="ch-board__row-3">
+				<td class="numeric-numeration">3</td>
+				<td class="black-cell">
+					<div class="black-checker-1"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-2"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-3"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-4"></div>
+				</td>
+				<td class="white-cell"></td>
+			</tr>
+			<tr class="ch-board__row-2">
+				<td class="numeric-numeration">2</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-5"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-6"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-7"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-8"></div>
+				</td>
+			</tr>
+			<tr class="ch-board__row-1">
+				<td class="numeric-numeration">1</td>
+				<td class="black-cell">
+					<div class="black-checker-9"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-10"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-11"></div>
+				</td>
+				<td class="white-cell"></td>
+				<td class="black-cell">
+					<div class="black-checker-12"></div>
+				</td>
+				<td class="white-cell"></td>
+			</tr>
+			<tr class="ch-board__row-letter-numeration">
+				<td class=""></td>
+				<td class="">a</td>
+				<td class="">b</td>
+				<td class="">c</td>
+				<td class="">d</td>
+				<td class="">e</td>
+				<td class="">f</td>
+				<td class="">g</td>
+				<td class="">h</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>
